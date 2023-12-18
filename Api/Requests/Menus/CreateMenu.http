@@ -1,0 +1,21 @@
+@Host = https://localhost:7002/api
+
+@Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkY2JjN2IzYS1jZWIxLTQ2N2MtOGYyYi01YjUyOGNlNTRhZDkiLCJnaXZlbl9uYW1lIjoibWVvIiwiZmFtaWx5X25hbWUiOiJiZW8iLCJqdGkiOiJjODg3MTBkNy0xN2ZiLTQzMTAtYmQyOC05ZjZmY2FkNGM3MTciLCJleHAiOjE3MDI5NDExNzcsImlzcyI6IkJ1YmVyRGlubmVyIiwiYXVkIjoiQnViZXJEaW5uZXIifQ.miZeZjK_ybtUXMOqX-2JW0S4JV3h-D9OD9X1Ojye3ng
+
+@HostId = f1c4c793-ac57-49c5-8fc1-45eeded0c058
+
+POST {{Host}}/hosts/{{HostId}}/menus HTTP/1.1
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+    "name": "menu1",
+    "description": "menu1 desc",
+    "sections": [
+      {
+        "name": "hello",
+        "description": "hole",
+        "items": []
+      }
+    ]
+}

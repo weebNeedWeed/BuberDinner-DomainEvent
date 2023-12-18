@@ -1,0 +1,6 @@
+@Host = https://localhost:7002/api
+
+@Token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYzg0YzFhMi00NjlmLTRmMTUtYTNiYy1jM2FlNzBiYzMxYzIiLCJnaXZlbl9uYW1lIjoibWVvIiwiZmFtaWx5X25hbWUiOiJiZW8iLCJqdGkiOiI1MDc5YWI3My1lN2JjLTQ3NTMtOWE4MS04OTI1OGQ3NTY3M2IiLCJleHAiOjE3MDI4NzMzNTYsImlzcyI6IkJ1YmVyRGlubmVyIiwiYXVkIjoiQnViZXJEaW5uZXIifQ.XgnLVIZ7tjZTg5dlf8_OFwOTMT4uXwPHuAQCgWlwYfU
+
+GET {{Host}}/dinners HTTP/1.1
+Authorization: {{Token}}
